@@ -1,0 +1,187 @@
+.faqItem {
+  margin-bottom: 1rem;
+  border: 1px solid rgba(210, 192, 178, 0.3);
+  border-radius: 16px;
+  overflow: hidden;
+  width: 500px;
+  margin: 15px auto;
+  direction: rtl;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(248, 244, 241, 0.7);
+  box-shadow: 
+    0 8px 32px rgba(210, 192, 178, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.faqItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 40px rgba(210, 192, 178, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  border-color: rgba(179, 150, 127, 0.4);
+}
+
+.questionButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(248, 244, 241, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: none;
+  text-decoration: none;
+  color: #5a4a3f;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.questionButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.2) 50%, 
+    transparent 100%);
+}
+
+.questionButton:hover {
+  background: rgba(241, 233, 228, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.questionText {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #5a4a3f;
+  direction: rtl;
+  flex-grow: 1;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.iconWrapper {
+  width: 24px;
+  flex-shrink: 0;
+  color: #b3967f;
+  text-decoration: none;
+  filter: drop-shadow(0 1px 2px rgba(179, 150, 127, 0.3));
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.answerContainer {
+  overflow: hidden;
+  transition: height 0.3s ease;
+  background: rgba(253, 251, 249, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  margin: auto;
+  direction: rtl;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.answerText {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.05rem;
+  padding: 1rem;
+  color: #5a4a3f;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+  line-height: 1.6;
+}
+
+/* Enhanced styling for links and important text */
+.answerText a, .answerText strong {
+  color: #b3967f;
+  text-shadow: 0 1px 2px rgba(179, 150, 127, 0.2);
+  font-weight: 600;
+}
+
+.answerText a {
+  text-decoration: underline;
+  text-decoration-color: rgba(179, 150, 127, 0.4);
+  transition: all 0.3s ease;
+}
+
+.answerText a:hover {
+  text-decoration-color: #b3967f;
+  color: #9d8066;
+}
+
+/* Responsive styles with glassmorphism preserved */
+@media (max-width: 350px) {
+  .faqItem {
+    width: 280px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .questionText {
+    font-size: 1rem;
+  }
+  .answerText {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .faqItem {
+    width: 320px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .questionText {
+    font-size: 1.05rem;
+  }
+  .answerText {
+    font-size: 0.95rem; 
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .faqItem {
+    width: 400px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .questionText {
+    font-size: 1.1rem;
+  }
+  .answerText {
+    font-size: 1rem; 
+  }
+}
+
+/* Optional: Add a subtle animation for the glassmorphism effect */
+@keyframes glassShimmer {
+  0% {
+    background: rgba(248, 244, 241, 0.7);
+  }
+  50% {
+    background: rgba(248, 244, 241, 0.8);
+  }
+  100% {
+    background: rgba(248, 244, 241, 0.7);
+  }
+}
+
+.faqItem:hover {
+  animation: glassShimmer 2s ease-in-out infinite;
+}

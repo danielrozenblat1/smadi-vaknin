@@ -1,0 +1,750 @@
+.center {
+  display: flex;
+  justify-content: center;
+  margin: 2% auto;
+}
+
+.image {
+  width: 90%;
+  height: auto;
+}
+
+.title {
+  color: #000000;
+  direction: rtl;
+  font-family: "Assistant";
+  font-size: 2.5rem;
+  margin: 2% auto;
+  width: 90%;
+  text-align: center;
+}
+
+.description {
+  color: #000000;
+  direction: rtl;
+  font-family: "AssistantR";
+  font-size: 1.4rem;
+  margin: 2% auto;
+  text-align: center;
+}
+
+.descriptionWithIcon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  direction: rtl;
+  margin: 2% auto;
+  width: 40%;
+  gap: 15px;
+}
+
+.icon {
+  color: #ecca9d;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.textRight {
+  color: #000000;
+  font-family: "AssistantR";
+  font-size: 1.4rem;
+  text-align: right;
+  direction: rtl;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  direction: rtl;
+  margin: 2% auto;
+}
+
+/* עיצוב החששות המיוחד */
+.fears {
+  margin: 3% auto;
+  width: 35%;
+  direction: rtl;
+}
+
+.fears .description {
+  background: linear-gradient(135deg, #f8f4f1 0%, #faf7f4 100%);
+  border-right: 4px solid #ecca9d;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin: 15px auto;
+  font-family: "AssistantR";
+  font-size: 1.3rem;
+  color: #5a5a5a;
+  text-align: right;
+  direction: rtl;
+  position: relative;
+  box-shadow: 0 3px 12px rgba(236, 202, 157, 0.15);
+  transition: all 0.3s ease;
+  font-style: italic;
+}
+
+.fears .description::before {
+  content: '"';
+  font-size: 3rem;
+  color: #ecca9d;
+  position: absolute;
+  top: -5px;
+  right: 15px;
+  font-family: serif;
+  opacity: 0.6;
+}
+
+.fears .description::after {
+  content: '"';
+  font-size: 3rem;
+  color: #ecca9d;
+  position: absolute;
+  bottom: -25px;
+  left: 15px;
+  font-family: serif;
+  opacity: 0.6;
+}
+
+.fears .description:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(236, 202, 157, 0.25);
+  background: linear-gradient(135deg, #f6f1ee 0%, #f8f5f2 100%);
+}
+
+.fears .description:nth-child(1) {
+  border-right-color: #e2d2c0;
+}
+
+.fears .description:nth-child(2) {
+  border-right-color: #e2d2c0;
+  margin-right: 20px;
+}
+
+.fears .description:nth-child(3) {
+  border-right-color: #e2d2c0;
+  margin-right: 40px;
+}
+
+/* Responsive Image Styles */
+/* מתחת ל-350px */
+@media (max-width: 349px) {
+  .image {
+    width: 90%;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin: 3% auto;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    margin: 3% auto;
+  }
+  
+  .descriptionWithIcon {
+    margin: 3% auto;
+    width: 95%;
+    gap: 10px;
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+  }
+  
+  .textRight {
+    font-size: 0.9rem;
+  }
+  
+  .row {
+    flex-direction: column;
+    margin: 3% auto;
+  }
+  
+  .fears {
+    width: 95%;
+  }
+  
+  .fears .description {
+    font-size: 1rem;
+    padding: 15px 20px;
+    margin: 12px auto;
+  }
+  
+  .fears .description::before,
+  .fears .description::after {
+    font-size: 2.2rem;
+  }
+  
+  .fears .description:nth-child(2) {
+    margin-right: 10px;
+  }
+  
+  .fears .description:nth-child(3) {
+    margin-right: 20px;
+  }
+}
+
+/* 350-450px */
+@media (min-width: 350px) and (max-width: 450px) {
+  .image {
+    width: 85%;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+    margin: 2% auto;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    width: 85%;
+    margin: 2% auto;
+  }
+  
+  .descriptionWithIcon {
+    margin: 3.5% auto;
+    width: 85%;
+    gap: 12px;
+  }
+  
+  .icon {
+    font-size: 1.4rem;
+  }
+  
+  .textRight {
+    font-size: 1.1rem;
+  }
+  
+  .row {
+    flex-direction: column;
+    margin: 2.5% auto;
+  }
+  
+  .fears {
+    width: 90%;
+  }
+  
+  .fears .description {
+    font-size: 1.05rem;
+    padding: 16px 22px;
+    margin: 13px auto;
+  }
+  
+  .fears .description::before,
+  .fears .description::after {
+    font-size: 2.4rem;
+  }
+  
+  .fears .description:nth-child(2) {
+    margin-right: 12px;
+  }
+  
+  .fears .description:nth-child(3) {
+    margin-right: 24px;
+  }
+}
+
+/* 450-550px */
+@media (min-width: 451px) and (max-width: 550px) {
+  .image {
+    width: 80%;
+  }
+  
+  .title {
+    font-size: 1.9rem;
+    margin: 2.3% auto;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    margin: 2.3% auto;
+  }
+  
+  .descriptionWithIcon {
+    margin: 2.3% auto;
+    width: 92%;
+    gap: 13px;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+  }
+  
+  .textRight {
+    font-size: 1.1rem;
+  }
+  
+  .row {
+    flex-direction: row;
+    margin: 2.3% auto;
+  }
+  
+  .fears {
+    width: 88%;
+  }
+  
+  .fears .description {
+    font-size: 1.1rem;
+    padding: 17px 23px;
+    margin: 13px auto;
+  }
+  
+  .fears .description::before,
+  .fears .description::after {
+    font-size: 2.6rem;
+  }
+  
+  .fears .description:nth-child(2) {
+    margin-right: 15px;
+  }
+  
+  .fears .description:nth-child(3) {
+    margin-right: 30px;
+  }
+}
+
+/* 550-650px */
+@media (min-width: 551px) and (max-width: 650px) {
+  .image {
+    width: 75%;
+  }
+  
+  .title {
+    font-size: 2.1rem;
+    margin: 2.2% auto;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin: 2.2% auto;
+  }
+  
+  .descriptionWithIcon {
+    margin: 2.2% auto;
+    width: 92%;
+    gap: 13px;
+  }
+  
+  .icon {
+    font-size: 1.6rem;
+  }
+  
+  .textRight {
+    font-size: 1.2rem;
+  }
+  
+  .row {
+    flex-direction: row;
+    margin: 2.2% auto;
+  }
+  
+  .fears {
+    width: 87%;
+  }
+  
+  .fears .description {
+    font-size: 1.15rem;
+    padding: 18px 24px;
+    margin: 14px auto;
+  }
+  
+  .fears .description::before,
+  .fears .description::after {
+    font-size: 2.7rem;
+  }
+  
+  .fears .description:nth-child(2) {
+    margin-right: 16px;
+  }
+  
+  .fears .description:nth-child(3) {
+    margin-right: 32px;
+  }
+}
+
+/* 650-750px */
+@media (min-width: 651px) and (max-width: 750px) {
+  .image {
+    width: 70%;
+  }
+  
+  .title {
+    font-size: 2.3rem;
+    margin: 2.1% auto;
+  }
+  
+  .description {
+    font-size: 1.3rem;
+    margin: 2.1% auto;
+  }
+  
+  .descriptionWithIcon {
+    margin: 2.1% auto;
+    width: 90%;
+    gap: 14px;
+  }
+  
+  .icon {
+    font-size: 1.7rem;
+  }
+  
+  .textRight {
+    font-size: 1.3rem;
+  }
+  
+  .row {
+    flex-direction: row;
+    margin: 2.1% auto;
+  }
+  
+  .fears {
+    width: 86%;
+  }
+  
+  .fears .description {
+    font-size: 1.2rem;
+    padding: 19px 25px;
+    margin: 14px auto;
+  }
+  
+  .fears .description::before,
+  .fears .description::after {
+    font-size: 2.8rem;
+  }
+  
+  .fears .description:nth-child(2) {
+    margin-right: 17px;
+  }
+  
+  .fears .description:nth-child(3) {
+    margin-right: 34px;
+  }
+}
+
+/* 750-850px */
+@media (min-width: 751px) and (max-width: 850px) {
+  .image {
+    width: 65%;
+  }
+  
+  .title {
+    font-size: 2.4rem;
+    margin: 2% auto;
+  }
+  
+  .description {
+    font-size: 1.35rem;
+    margin: 2% auto;
+  }
+  
+  .descriptionWithIcon {
+    margin: 2% auto;
+    width: 90%;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 1.8rem;
+  }
+  
+  .textRight {
+    font-size: 1.35rem;
+  }
+  
+  .row {
+    flex-direction: row;
+    margin: 2% auto;
+  }
+  
+  .fears {
+    width: 85%;
+  }
+  
+  .fears .description {
+    font-size: 1.25rem;
+    padding: 19px 25px;
+    margin: 14px auto;
+  }
+  
+  .fears .description::before,
+  .fears .description::after {
+    font-size: 2.9rem;
+  }
+  
+  .fears .description:nth-child(2) {
+    margin-right: 18px;
+  }
+  
+  .fears .description:nth-child(3) {
+    margin-right: 36px;
+  }
+}
+
+/* 850-950px */
+@media (min-width: 851px) and (max-width: 950px) {
+  .image {
+    width: 60%;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin: 2% auto;
+  }
+  
+  .description {
+    font-size: 1.4rem;
+    margin: 2% auto;
+  }
+  
+  .descriptionWithIcon {
+    margin: 2% auto;
+    width: 90%;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 1.8rem;
+  }
+  
+  .textRight {
+    font-size: 1.4rem;
+  }
+  
+  .row {
+    flex-direction: row;
+    margin: 2% auto;
+  }
+  
+  .fears {
+    width: 85%;
+  }
+  
+  .fears .description {
+    font-size: 1.3rem;
+    padding: 20px 25px;
+    margin: 15px auto;
+  }
+  
+  .fears .description::before,
+  .fears .description::after {
+    font-size: 3rem;
+  }
+  
+  .fears .description:nth-child(2) {
+    margin-right: 20px;
+  }
+  
+  .fears .description:nth-child(3) {
+    margin-right: 40px;
+  }
+}
+
+/* 950-1050px */
+@media (min-width: 951px) and (max-width: 1050px) {
+  .image {
+    width: 55%;
+  }
+  
+  .title {
+    font-size: 2.6rem;
+    margin: 1.9% auto;
+  }
+  
+  .description {
+    font-size: 1.45rem;
+    margin: 1.9% auto;
+  }
+  
+  .descriptionWithIcon {
+    margin: 1.9% auto;
+    width: 90%;
+    gap: 16px;
+  }
+  
+  .icon {
+    font-size: 1.9rem;
+  }
+  
+  .textRight {
+    font-size: 1.45rem;
+  }
+  
+  .row {
+    flex-direction: row;
+    margin: 1.9% auto;
+  }
+  
+  .fears {
+    width: 85%;
+  }
+  
+  .fears .description {
+    font-size: 1.35rem;
+    padding: 20px 25px;
+    margin: 15px auto;
+  }
+  
+  .fears .description::before,
+  .fears .description::after {
+    font-size: 3.1rem;
+  }
+}
+
+/* 1050-1150px */
+@media (min-width: 1051px) and (max-width: 1150px) {
+  .image {
+    width: 50%;
+  }
+  
+  .title {
+    font-size: 2.7rem;
+    margin: 1.8% auto;
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    margin: 1.8% auto;
+  }
+  
+  .descriptionWithIcon {
+    margin: 1.8% auto;
+    width: 90%;
+    gap: 16px;
+  }
+  
+  .icon {
+    font-size: 1.9rem;
+  }
+  
+  .textRight {
+    font-size: 1.5rem;
+  }
+  
+  .row {
+    flex-direction: row;
+    margin: 1.8% auto;
+  }
+  
+  .fears {
+    width: 85%;
+  }
+  
+  .fears .description {
+    font-size: 1.4rem;
+    padding: 20px 25px;
+    margin: 15px auto;
+  }
+  
+  .fears .description::before,
+  .fears .description::after {
+    font-size: 3.2rem;
+  }
+}
+
+/* 1150-1250px */
+@media (min-width: 1151px) and (max-width: 1250px) {
+  .image {
+    width: 45%;
+  }
+  
+  .title {
+    font-size: 2.8rem;
+    margin: 1.7% auto;
+  }
+  
+  .description {
+    font-size: 1.55rem;
+    margin: 1.7% auto;
+  }
+  
+  .descriptionWithIcon {
+    margin: 1.7% auto;
+    width: 90%;
+    gap: 17px;
+  }
+  
+  .icon {
+    font-size: 2rem;
+  }
+  
+  .textRight {
+    font-size: 1.55rem;
+  }
+  
+  .row {
+    flex-direction: row;
+    margin: 1.7% auto;
+  }
+  
+  .fears {
+    width: 85%;
+  }
+  
+  .fears .description {
+    font-size: 1.45rem;
+    padding: 20px 25px;
+    margin: 15px auto;
+    max-width: 640px;
+  }
+  
+  .fears .description::before,
+  .fears .description::after {
+    font-size: 3.3rem;
+  }
+}
+
+/* מעל 1250px - מסכי מחשב גדולים */
+@media (min-width: 1251px) {
+  .image {
+    width: 30%;
+  }
+  
+  .title {
+    font-size: 2.9rem;
+    margin: 1.6% auto;
+  }
+  
+  .description {
+    font-size: 1.6rem;
+    margin: 1.6% auto;
+  }
+  
+  .descriptionWithIcon {
+    margin: 1.6% auto;
+    width: 30%;
+    gap: 18px;
+  }
+  
+  .icon {
+    font-size: 2.1rem;
+  }
+  
+  .textRight {
+    font-size: 1.6rem;
+  }
+  
+  .row {
+    flex-direction: row;
+    margin: 1.6% auto;
+  }
+  
+  .fears {
+    width: 85%;
+  }
+  
+  .fears .description {
+    font-size: 1.5rem;
+    padding: 20px 25px;
+    margin: 15px auto;
+    max-width: 700px;
+  }
+  
+  .fears .description::before,
+  .fears .description::after {
+    font-size: 3.4rem;
+  }
+}

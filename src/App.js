@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import FirstScreen from './screens/FirstScreen';
+import SecondScreen from './screens/SecondScreen';
+import AboutMe from './components/me/Me';
+import Works from './components/recommends/Works';
+import RecommendsScreen from './components/RecommendsScreen/RecommendsScreen';
+import ThirdScreen from './screens/ThirdScreen';
+
+import ByMe from './components/ByMe/ByMe';
+import ForthScreen from './screens/ForthScreen';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+  <FirstScreen/>
+  <SecondScreen/>
+  <AboutMe/>
+  <Works/>
+  <RecommendsScreen/>
+  <ThirdScreen/>
+  <ForthScreen/>
+  <ByMe/>
+  </>
 }
 
 export default App;

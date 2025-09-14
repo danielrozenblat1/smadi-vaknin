@@ -1,0 +1,298 @@
+.whoFitContainer {
+  margin: 3% auto;
+  width: 85%;
+  direction: rtl;
+  font-family: "AssistantR";
+}
+
+.title {
+  color: #000000;
+  direction: rtl;
+  font-family: "Assistant";
+  font-size: 2.2rem;
+  margin: 2% auto;
+  width: 90%;
+  text-align: center;
+}
+
+.fitItem {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 18px 24px;
+  margin: 14px auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  direction: rtl;
+  gap: 16px;
+  max-width: 580px;
+  min-height: 50px;
+  position: relative;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
+  inset: 0 2px 8px rgba(255, 255, 255, 0.4);
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.fitItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.decorativeShape {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(212, 165, 116, 0.08));
+  border-radius: 0 0 100% 0;
+  z-index: 1;
+}
+
+.fitIcon {
+  color: #d4a574;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.fitText {
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  text-align: right;
+  direction: rtl;
+  flex: 1;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 349px) {
+  .whoFitContainer {
+    width: 92%;
+  }
+  
+  .title {
+    font-size: 1.4rem;
+    margin: 3% auto;
+  }
+  
+  .fitItem {
+    padding: 14px 18px;
+    margin: 12px auto;
+    gap: 12px;
+    border-radius: 16px;
+    min-height: 45px;
+  }
+  
+  .decorativeShape {
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: -20px;
+  }
+  
+  .fitIcon {
+    font-size: 1.2rem;
+  }
+  
+  .fitText {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .whoFitContainer {
+    width: 88%;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin: 2.5% auto;
+  }
+  
+  .fitItem {
+    padding: 15px 20px;
+    margin: 13px auto;
+    gap: 13px;
+    border-radius: 17px;
+    min-height: 46px;
+  }
+  
+  .decorativeShape {
+    width: 42px;
+    height: 42px;
+    top: -21px;
+    left: -21px;
+  }
+  
+  .fitIcon {
+    font-size: 1.3rem;
+  }
+  
+  .fitText {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 550px) {
+  .title {
+    font-size: 1.7rem;
+  }
+  
+  .fitItem {
+    padding: 16px 21px;
+    margin: 13px auto;
+    gap: 14px;
+    border-radius: 18px;
+    min-height: 47px;
+  }
+  
+  .decorativeShape {
+    width: 44px;
+    height: 44px;
+    top: -22px;
+    left: -22px;
+  }
+  
+  .fitIcon {
+    font-size: 1.4rem;
+  }
+  
+  .fitText {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 650px) {
+  .title {
+    font-size: 1.9rem;
+  }
+  
+  .fitItem {
+    padding: 17px 22px;
+    margin: 14px auto;
+    gap: 15px;
+    border-radius: 19px;
+    min-height: 48px;
+  }
+  
+  .decorativeShape {
+    width: 46px;
+    height: 46px;
+    top: -23px;
+    left: -23px;
+  }
+  
+  .fitIcon {
+    font-size: 1.5rem;
+  }
+  
+  .fitText {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 750px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .fitItem {
+    padding: 17px 23px;
+    margin: 14px auto;
+    gap: 15px;
+    border-radius: 19px;
+    min-height: 49px;
+  }
+  
+  .decorativeShape {
+    width: 47px;
+    height: 47px;
+    top: -23px;
+    left: -23px;
+  }
+  
+  .fitIcon {
+    font-size: 1.55rem;
+  }
+  
+  .fitText {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 850px) {
+  .title {
+    font-size: 2.1rem;
+  }
+  
+  .fitItem {
+    padding: 18px 24px;
+    margin: 14px auto;
+    gap: 16px;
+    border-radius: 20px;
+    min-height: 50px;
+  }
+  
+  .decorativeShape {
+    width: 48px;
+    height: 48px;
+    top: -24px;
+    left: -24px;
+  }
+  
+  .fitIcon {
+    font-size: 1.6rem;
+  }
+  
+  .fitText {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 851px) and (max-width: 950px) {
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .fitItem {
+    padding: 18px 24px;
+    margin: 14px auto;
+    gap: 16px;
+    border-radius: 20px;
+    min-height: 50px;
+  }
+  
+  .fitIcon {
+    font-size: 1.6rem;
+  }
+  
+  .fitText {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 951px) {
+  .title {
+    font-size: 2.3rem;
+  }
+  
+  .fitText {
+    font-size: 1.15rem;
+  }
+  
+  .fitItem {
+    padding: 16px 22px;
+    margin: 13px auto;
+    min-height: 52px;
+  }
+}
