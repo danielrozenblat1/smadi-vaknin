@@ -32,6 +32,7 @@ const ThirdScreen = () => {
         
         <div className={styles.title}>וזה קורה בדרך הבאה</div>
         <ManicureSyllabus/>
+         <div className={styles.description} style={{margin:"-2% auto auto 2%"}}>*הקורס נלמד בגם אקריל וגם בטיפס הפוך*</div>
           <div className={styles.title}>למה דווקא עכשיו?</div>
                <div className={styles.description}>התשובה היא פשוטה - שנייה לפני שאנחנו עושות צעד חשוב עולים כל החששות האפשריים..</div>
                <div className={styles.fears}>
